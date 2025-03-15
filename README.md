@@ -3,6 +3,18 @@
 Welcome to the **100 Days of Python** learning! 
 🚀 This repository documents my journey to master Python, covering everything from the fundamentals to advanced concepts, projects, and real-world applications.
 
+
+## Project Description
+This project is a classic Snake Game built using Python’s Turtle module. The game features a moving snake that grows in length as it consumes food, with the goal of achieving the highest possible score without colliding with the walls or itself.
+
+Features
+* Snake Movement: The snake moves in four directions—up, down, left, and right—using keyboard controls.
+* Food Generation: The game randomly places food on the screen, and the snake consumes it to grow.
+* Scoreboard System: Displays the current score and keeps track of the highest score.
+* Collision Detection: The game detects when the snake collides with the walls or its own body.
+* Game Reset: The game resets when the player loses, updating the high score and restarting the snake.
+* Smooth Animation: The game uses the screen.tracer(0) and screen.update() functions to create smooth animations.
+![Image](https://github.com/user-attachments/assets/3addd781-fd45-40cf-9c82-636942827c06)
 ## Turtle Crossing Game
 Description
 This is a simple Turtle Crossing Game built using Python's turtle module. The player controls a turtle that must cross a road while avoiding moving cars. The game gets progressively harder as the player advances through levels.
