@@ -4,6 +4,41 @@ Welcome to the **100 Days of Python** learning!
 🚀 This repository documents my journey to master Python, covering everything from the fundamentals to advanced concepts, projects, and real-world applications.
 
 
+## FLASH CARD TO IMPROVE GERMAN VOCABS:
+This project is a flashcard-based language learning app built using Python's Tkinter for the graphical user interface (GUI) and pandas for managing vocabulary data. The app helps users learn German vocabulary by showing them flashcards with the German word on one side and the English translation on the other. Users can interact with the flashcards by marking whether they know the word or not. The goal is to reinforce learning through repetition and active recall.
+
+
+(HOW THIS WORKS)
+* Data Loading:
+
+When the app starts, it attempts to load the vocabulary data from a CSV file (words_to_learn.csv). If the file does not exist (for new users), it loads data from a fallback file (german words - Sheet1.csv).
+
+* Displaying a Card:
+
+The next_card function randomly selects a word from the vocabulary list (to_learn), updates the front of the card with the German word, and sets a timer to flip the card after 3 seconds to show the English translation.
+
+* Flipping the Card:
+
+After 3 seconds, the show_answer function is triggered, displaying the English translation and changing the background image to the back of the card.
+
+* User Marking a Word as Known:
+
+When the user clicks the "known" button, the word is removed from the to_learn list and the vocabulary data is saved back to the CSV file (words_to_learn.csv). This ensures the user only sees words they need to learn.
+
+* UI Components:
+
+The flashcards are displayed using a Canvas widget, and images are used for the front and back of the card.
+
+Two buttons allow the user to interact with the flashcards, marking words as known or unknown.
+
+* Persistent Data:
+
+As the user marks words as "known," those words are removed from the vocabulary list, and the updated list is saved back to a CSV file. This allows the app to remember the progress across sessions
+
+![Image](https://github.com/user-attachments/assets/bfcf78e8-6ebb-4c0c-ac1b-d357181e1298)
+
+
+
 ## Project Description
 This project is a classic Snake Game built using Python’s Turtle module. The game features a moving snake that grows in length as it consumes food, with the goal of achieving the highest possible score without colliding with the walls or itself.
 
