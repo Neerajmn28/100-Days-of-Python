@@ -77,3 +77,73 @@ Key Features:
 Technologies Used:
 
 ![Image](https://github.com/user-attachments/assets/14a6835b-0830-4b73-9831-8e4cfeec78f6)
+
+
+
+
+## Project Description: GUI Quiz Game
+This project is a Python-based graphical user interface (GUI) quiz game built using the tkinter library. The quiz game fetches trivia questions from the Open Trivia Database API and displays them to the user in a user-friendly format. The user answers the questions by clicking either the 'True' or 'False' buttons, and their score is updated and displayed on the screen.
+
+ Project Logic Breakdown:
+Fetching Questions from API:
+
+Uses the requests library to fetch trivia questions from the Open Trivia Database API.
+
+Requests a set of 10 questions of type 'boolean' (True/False).
+
+The received questions are stored in a list called question_data.
+
+Question Model Class:
+
+The Question class is used to model each question with two attributes:
+
+text: The actual question text.
+
+answer: The correct answer (either 'True' or 'False').
+
+QuizBrain Class (Backend Logic):
+
+Manages the quiz flow and scoring.
+
+Tracks the current question, user’s score, and total questions.
+
+Contains methods for:
+
+Fetching the next question.
+
+Checking the user’s answer.
+
+Returning feedback based on the correctness of the answer.
+
+Keeping track of the quiz progress.
+
+QuizInterface Class (Frontend GUI):
+
+Uses tkinter to create a window and display the quiz game.
+
+Components:
+
+A Label widget to show the current score.
+
+A Canvas widget to display the question text.
+
+Two Button widgets for 'True' and 'False' responses.
+
+When a button is pressed, the answer is checked, and feedback is displayed by changing the canvas color.
+
+After 1 second, the next question is automatically displayed.
+
+User Interaction Handling:
+
+User clicks either 'True' or 'False'.
+
+The answer is validated, and the score is updated if correct.
+
+Visual feedback is provided (green for correct, purple for incorrect).
+
+Progresses to the next question after a delay.
+
+Completion Handling:
+
+When all questions are answered, the buttons are disabled, and a message indicating the end of the quiz is displayed.
+![Image](https://github.com/user-attachments/assets/30b01a76-d9ae-4843-b670-2706d40a4260)
