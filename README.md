@@ -146,4 +146,6 @@ Progresses to the next question after a delay.
 Completion Handling:
 
 When all questions are answered, the buttons are disabled, and a message indicating the end of the quiz is displayed.
+
+
 ![Image](https://github.com/user-attachments/assets/30b01a76-d9ae-4843-b670-2706d40a4260)
